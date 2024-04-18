@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="device-width", intial-scale="1.0">
+<title>Rock, Paper, Scissors, Lizard, Spock - Online!</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+        <h1 id="h1">ROCK, PAPER, SCISSORS, LIZARD, SPOCK!</h1>
+        <p id="objective"><br>Rock beats Scissors & Lizard 
+        <br>Scissors beats Paper & Lizard
+        <br> Paper beats Rock & Spock
+        <br> Lizard beats Spock & Paper 
+        <br> Spock beats Scissors & Rock
+        <br><br> First who get 3 points win whole game 
+        <br> You play against computer
+        <br><br>Choose your symbol, beat your opponent, and have fun!</p>
+
+    <div class="container">
+        <h1>Start Game by choosing your fighter!</h1>
+        
+        <div id="result"></div>
+        <!-- Choices to be randomly selected -->
+        <div class="choice">
+            <button onclick="playerChoice('rock')">Rock</button>
+            <button onclick="playerChoice('paper')">Paper</button>
+            <button onclick="playerChoice('scissors')">Scissors</button>
+            <button onclick="playerChoice('lizard')">Lizard</button>
+            <button onclick="playerChoice('spock')">Spock</button>
+        </div>
+        
+        <div id="computer-choice"></div>
+    
+        <button onclick="resetGame()">Restart</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+
+
+
+</html>
